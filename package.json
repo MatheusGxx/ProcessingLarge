@@ -9,6 +9,7 @@
     "typescript": "^5.0.0"
   },
   "packageManager": "bun@1.1.22",
+  "private": true,
   "scripts": {
     "start": "turbo start",
     "dev": "turbo dev",
@@ -16,7 +17,6 @@
     "format": "biome format --write --max-diagnostics=200",
     "prepare": "husky"
   },
-  "private": true,
   "type": "module",
   "workspaces": [
     "apps/**",
