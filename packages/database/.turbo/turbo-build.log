@@ -1,0 +1,100 @@
+$ bun build --target bun src/index.ts
+// @bun
+var __create = Object.create;
+var __getProtoOf = Object.getPrototypeOf;
+var __defProp = Object.defineProperty;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __reExport = (target, mod, secondTarget) => {
+  for (let key of __getOwnPropNames(mod))
+    if (!__hasOwnProp.call(target, key) && key !== "default")
+      __defProp(target, key, {
+        get: () => mod[key],
+        enumerable: true
+      });
+  if (secondTarget) {
+    for (let key of __getOwnPropNames(mod))
+      if (!__hasOwnProp.call(secondTarget, key) && key !== "default")
+        __defProp(secondTarget, key, {
+          get: () => mod[key],
+          enumerable: true
+        });
+    return secondTarget;
+  }
+};
+var __toESM = (mod, isNodeMode, target) => {
+  target = mod != null ? __create(__getProtoOf(mod)) : {};
+  const to = isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target;
+  for (let key of __getOwnPropNames(mod))
+    if (!__hasOwnProp.call(to, key))
+      __defProp(to, key, {
+        get: () => mod[key],
+        enumerable: true
+      });
+  return to;
+};
+var __commonJS = (cb, mod) => () => (mod || cb((mod = { exports: {} }).exports, mod), mod.exports);
+
+// ../../node_modules/.prisma/client/default.js
+var require_default = __commonJS((exports, module) => {
+  function defineExtension(ext) {
+    if (typeof ext === "function") {
+      return ext;
+    }
+    return (client) => client.$extends(ext);
+  }
+  function getExtensionContext(that) {
+    return that;
+  }
+  var __defProp2 = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames2 = Object.getOwnPropertyNames;
+  var __hasOwnProp2 = Object.prototype.hasOwnProperty;
+  var __export = (target, all) => {
+    for (var name in all)
+      __defProp2(target, name, { get: all[name], enumerable: true });
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames2(from))
+        if (!__hasOwnProp2.call(to, key) && key !== except)
+          __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toCommonJS = (mod) => __copyProps(__defProp2({}, "__esModule", { value: true }), mod);
+  var default_index_exports = {};
+  __export(default_index_exports, {
+    Prisma: () => Prisma,
+    PrismaClient: () => PrismaClient,
+    default: () => default_index_default
+  });
+  module.exports = __toCommonJS(default_index_exports);
+  var prisma = {
+    enginesVersion: "08713a93b99d58f31485621c634b04983ae01d95"
+  };
+  var version = "5.21.0";
+  var clientVersion = version;
+  var PrismaClient = class {
+    constructor() {
+      throw new Error('@prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.');
+    }
+  };
+  var Prisma = {
+    defineExtension,
+    getExtensionContext,
+    prismaVersion: { client: clientVersion, engine: prisma.enginesVersion }
+  };
+  var default_index_default = { Prisma };
+});
+
+// ../../node_modules/@prisma/client/default.js
+var require_default2 = __commonJS((exports, module) => {
+  module.exports = {
+    ...require_default()
+  };
+});
+
+// src/index.ts
+var exports_src = {};
+__reExport(exports_src, __toESM(require_default2(), 1));

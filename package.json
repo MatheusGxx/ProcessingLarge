@@ -18,8 +18,5 @@
     "prepare": "husky"
   },
   "type": "module",
-  "workspaces": [
-    "apps/**",
-    "packages/**"
-  ]
+  "workspaces": ["apps/**", "packages/**"]
 }
